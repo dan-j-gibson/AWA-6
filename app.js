@@ -3,7 +3,8 @@
 const urlStart="https://api.github.com/users/";
 const urlEnd="/repos"
 
-function displayResults(responseJson){   
+function displayResults(responseJson){  
+    console.log(responseJson) 
     $('#results').empty()
     $('#results').append(`<h2>Repository list for ${$('#js-username-input').val()}</h2>`);
     for(let i = 0; i < responseJson.length; i++){
