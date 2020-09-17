@@ -10,7 +10,7 @@ function displayResults(responseJson){
         $('#results').append(
             `<ul id="results-list">
                 <li>
-                    <a href=${responseJson[i].html_url}><h3>${responseJson[i].name}</a></h3> 
+                    <a href=${responseJson[i].html_url} target="_blank"><h3>${responseJson[i].name}</h3> </a> 
                 </li>
             </ul>`
             );
